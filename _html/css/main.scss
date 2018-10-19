@@ -1,0 +1,552 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+body{
+    padding-top: 88px;
+}
+
+
+// ================
+// SITE CONTENT
+// ================
+.site-content{
+    .poll-container{
+        background-color: #272c2e;
+        padding: 1.5rem 0;
+    }
+}
+
+        .poll-toolbar{
+            .btn,
+            select{    
+                height: 44px;
+                border-radius: 24px !important;
+            }
+            select{
+                background-color: #191919;
+                border: solid 2px #191919;
+                color: #fff !important;
+                height: 46px;
+            }
+            .btn{
+                width: 100%;
+                color: #fff;
+                &-red{
+                    background-color: #ec2828 !important;
+                    border: solid 2px #ec2828;
+                }
+                &-outline{
+                    background-color: transparent !important;
+                    border: solid 2px #fff;
+                }
+            }
+        }
+
+        .btn{
+            border-radius: 24px !important;
+            &-red{
+                background-color: #ec2828 !important;
+                border: solid 2px #ec2828;
+            }
+            &-outline{
+                background-color: transparent !important;
+                border: solid 2px #fff;
+            }
+        }
+
+        .poll-grids-title{
+            padding: 4.5rem 1.5rem 1.5rem;
+        }
+
+        .poll-grids{
+            overflow: hidden;
+            .no-gutters{
+                .poll-card{}
+            }
+            .btn.loadmore{
+                margin: 3rem auto;
+                color: #fff;
+                display: block;
+                width: 240px;
+                &:hover{
+                    color: #fff;
+                    background-color: #191919 !important;
+                }
+            }
+        }
+        .poll-card{
+            position: relative;
+            height: 240px;
+            margin: 8px;
+            color: #fff;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &.featured{
+                height: 496px;
+            }
+
+            .poll-overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.65)
+            }
+            .poll-btn-quickview{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.65);
+                text-align: center;
+                cursor: pointer;
+                .fas{
+                    line-height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-size: 64px;
+                    width: 50px;
+                    height: 50px;
+                    margin-top: -32px;
+                    margin-left: -32px;
+                }
+            }
+            &:hover{
+                .poll-btn-quickview{
+                    display: block;
+                }
+            }
+            .poll-content{
+                position: relative;
+                height: 100%;
+                .poll-copy{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 2rem;
+                    text-align: center;
+                    h1{
+                        margin: 0;
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 0.8rem;
+                    }
+                }
+                .poll-category,
+                .poll-exp-date,
+                .poll-value-point{
+                    position: absolute;
+                    font-size: 0.75rem;
+                }
+                .poll-category{
+                    position: static;
+                    margin-top: 0.5rem;
+                }
+                .poll-exp-date{
+                    top: 1rem;
+                    left: 1rem;
+                    i{
+                        position: relative;
+                        font-size: 48px;
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 0.25rem;
+                        span{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            font-size: 24px;
+                            text-align: center;
+                            display: block;
+                            width: 100%;
+                            line-height: 56px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .poll-value-point{
+                    top: 1rem;
+                    right: 1rem;
+                    margin: 0;
+                    width: 78px;
+                    height: 78px; 
+                    text-align: center;
+                    border: solid 4px #ec2828;
+                    border-radius: 50%;
+
+                    .value{
+                        font-size: 36px;
+                        line-height: 1.7;
+                    }
+                    small{
+                        display: block;
+                        font-size: 0.8rem;
+                        line-height: 0;
+                        letter-spacing: 3px;
+                        position: absolute;
+                        width: 100%;
+                        margin-top: -10px;
+                    }
+                }
+            }
+            &.featured{
+                .poll-content{
+                    .poll-copy{
+                        text-align: left;
+                        h1{
+                            font-size: 2rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                    .poll-category{
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                        margin-top: 0;
+                    }
+                    .poll-value-point{
+                        top: 50%;
+                        left: 50%;
+                        margin: -65px 0 0 -65px;
+                        width: 118px;
+                        height: 118px;
+                        border: solid 6px #ec2828;
+                        .value{
+                            font-size: 50px;
+                            line-height: 1.9;
+                        }
+                        small{
+                            font-size: 1rem;
+                            margin-top: -20px;
+                            letter-spacing: 6px;
+                        }
+                    }
+                }
+            }
+        }  
+        
+
+
+
+
+
+.footer{
+    background-color: #191919;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    .container-fluid{
+        padding: 2rem;
+    }
+    .footer-logo-pipipol{
+        margin-top: 1rem;
+    }
+    .sosmed{
+        margin-top: 1rem;
+        a{
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-color: #a2a2a2;
+            color: #191919;
+            line-height: 32px;
+            border-radius: 50%;
+            margin: 8px;
+            &:hover{
+                background-color: #ec2828;
+                color: #fff;
+            }
+        }
+    }
+    .copyright{
+        padding: 1rem;
+        border-top: solid 1px #666;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
