@@ -63,3 +63,34 @@
         border-top: solid 1px #ec2828;
     }
 }
+
+
+
+// POLL TOOLBAR
+.poll-toolbar{
+    background-color: #272c2e;
+    padding: 1rem 0;
+    .btn,
+    select{    
+        height: 44px;
+        border-radius: 24px !important;
+    }
+    select{
+        background-color: #191919;
+        border: solid 2px #191919;
+        color: #fff !important;
+        height: 46px;
+    }
+    .btn{
+        width: 100%;
+        color: #fff;
+        &-red{
+            background-color: #ec2828 !important;
+            border: solid 2px #ec2828;
+        }
+        &-outline{
+            background-color: transparent !important;
+            border: solid 2px #fff;
+        }
+    }
+}
