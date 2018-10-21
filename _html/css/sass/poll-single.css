@@ -54,6 +54,11 @@
   border-color: #ec2828;
 }
 
+.poll-single-body .poll-body-right {
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #e1e1e1;
+}
+
 .poll-single-body .poll-image {
   margin-bottom: 1rem;
 }
