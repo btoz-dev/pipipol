@@ -13,6 +13,12 @@
                 font-weight: 700;
             }
         }
+        .poll-meta{
+            .meta{
+                margin-right: 1rem;
+            }
+        }
+
         .poll-exp-date{
             width: 64px;
             text-align: center;
@@ -31,6 +37,7 @@
                     width: 100%;
                     line-height: 56px;
                     font-weight: 700;
+                    font-family: 'Exo 2', sans-serif;
                 }
             }
         }
@@ -38,8 +45,25 @@
     &-body{
         padding: 2rem 0 1rem;
         .poll-body-center{
-            padding-bottom: 1rem;
-            border-bottom: solid 1px #e1e1e1;
+            .poll-question{
+                padding-bottom: 1rem;
+                border-bottom: solid 1px #e1e1e1;
+            }
+            .poll-captcha{
+                width: 100%;;
+                padding: 2rem 0;
+                label{
+                    margin-right: 1rem;
+                }
+                input[type="text"]{
+                    border: none;
+                    border-bottom: solid 1px #e1e1e1;
+                    background: none;
+                }
+                .btn{
+                    width: 100%;
+                }
+            }
             .poll-body-right-mobile{
                 .btn-outline{
                     border-color: #ec2828;
@@ -51,7 +75,7 @@
         }
         .poll-body-right{
             padding-bottom: 1rem;
-            border-bottom: solid 1px #e1e1e1;
+            // border-bottom: solid 1px #e1e1e1;
         }
         
         .poll-image{
@@ -68,14 +92,14 @@
             border-radius: 50%;
             .value{
                 font-size: 72px;
-                line-height: 1.4;
+                line-height: 1.5;
                 font-weight: 700;
+                font-style: italic;
             }
             small{
                 display: block;
-                font-size: 1.3rem;
+                font-size: 1rem;
                 line-height: 0;
-                letter-spacing: 9px;
                 position: relative;
                 top: -10px;
             }
@@ -86,18 +110,13 @@
                 .value{
                     font-size: 42px;
                     line-height: 1.7;
-                }
-                small{
-                    font-size: 1rem;
-                    letter-spacing: 6px;
-                    
-                }
+                }                    
             }
         }
         .lapor{
             display: block;
             position: absolute;
-            bottom: 0;
+            bottom: 75px;
             left: 0;
             text-align: center;
             width: 100%;
@@ -109,3 +128,5 @@
         
     }
 }
+
+

@@ -91,6 +91,7 @@ textarea {
    ========================================================================== */
 body {
   padding-top: 88px;
+  font-family: 'Exo 2', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -640,6 +641,7 @@ a:hover {
   width: 100%;
   line-height: 56px;
   font-weight: 700;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .poll-card .poll-content .poll-value-point {
@@ -656,14 +658,14 @@ a:hover {
 .poll-card .poll-content .poll-value-point .value {
   font-size: 36px;
   line-height: 1.7;
-  font-weight: 600;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .poll-card .poll-content .poll-value-point small {
   display: block;
   font-size: 0.8rem;
   line-height: 0;
-  letter-spacing: 3px;
   position: absolute;
   width: 100%;
   margin-top: -10px;
@@ -705,7 +707,6 @@ a:hover {
 .poll-card.featured .poll-content .poll-value-point small {
   font-size: 1rem;
   margin-top: -20px;
-  letter-spacing: 6px;
 }
 
 .poll-single {
@@ -725,6 +726,10 @@ a:hover {
 .poll-single-header .poll-title h1 {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.poll-single-header .poll-meta .meta {
+  margin-right: 1rem;
 }
 
 .poll-single-header .poll-exp-date {
@@ -749,15 +754,35 @@ a:hover {
   width: 100%;
   line-height: 56px;
   font-weight: 700;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .poll-single-body {
   padding: 2rem 0 1rem;
 }
 
-.poll-single-body .poll-body-center {
+.poll-single-body .poll-body-center .poll-question {
   padding-bottom: 1rem;
   border-bottom: solid 1px #e1e1e1;
+}
+
+.poll-single-body .poll-body-center .poll-captcha {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.poll-single-body .poll-body-center .poll-captcha label {
+  margin-right: 1rem;
+}
+
+.poll-single-body .poll-body-center .poll-captcha input[type="text"] {
+  border: none;
+  border-bottom: solid 1px #e1e1e1;
+  background: none;
+}
+
+.poll-single-body .poll-body-center .poll-captcha .btn {
+  width: 100%;
 }
 
 .poll-single-body .poll-body-center .poll-body-right-mobile .btn-outline {
@@ -766,7 +791,6 @@ a:hover {
 
 .poll-single-body .poll-body-right {
   padding-bottom: 1rem;
-  border-bottom: solid 1px #e1e1e1;
 }
 
 .poll-single-body .poll-image {
@@ -786,15 +810,15 @@ a:hover {
 
 .poll-single-body .poll-value-point .value {
   font-size: 72px;
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 700;
+  font-style: italic;
 }
 
 .poll-single-body .poll-value-point small {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 0;
-  letter-spacing: 9px;
   position: relative;
   top: -10px;
 }
@@ -809,16 +833,12 @@ a:hover {
     font-size: 42px;
     line-height: 1.7;
   }
-  .poll-single-body .poll-value-point small {
-    font-size: 1rem;
-    letter-spacing: 6px;
-  }
 }
 
 .poll-single-body .lapor {
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: 75px;
   left: 0;
   text-align: center;
   width: 100%;

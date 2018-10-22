@@ -12,6 +12,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,7 +24,7 @@
 
   <!-- NAV BAR -->
 	<nav class="navbar navbar-expand-sm navbar-dark bg-tr">
-		<a class="navbar-brand" href="#"><img src="img/logo-pipipol_black.png"></a>
+		<a class="navbar-brand" href="./"><img src="img/logo-pipipol_black.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -85,67 +86,108 @@
         <div class="poll-single-header row">
           <div class="col-lg-10 col-md-9 col-sm-12">
             <div class="poll-title">
-              <h1>Presiden Republik Indonesia?</h1>
-              <div><i class="fas fa-user"></i> Romadhon Hapsa <span class="d-inline-block d-md-none"><i class="fas fa-user"></i> Kategori <i class="far fa-calendar"></i> 13 hari lagi</span> </div>
+              <h1>Presiden Republik Indonesia</h1>
+            </div>
+            <div class="poll-meta">
+              <i class="fas fa-user"></i> Romadhon Hapsa 
+              <span class="d-inline-block d-md-none">
+                <span class="meta"><i class="fas fa-user"></i> Sejarah Bangsa</span>
+                <span class="meta"><i class="far fa-calendar"></i> 13 hari lagi</span>
+              </span> 
             </div>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-12 d-none d-md-block text-center">
             <div class="poll-exp-date"><i class="far fa-calendar"><span>30</span></i>hari lagi</div>
-            <div class="poll-category btn btn-outline">Kategori Polling</div>
+            <div class="poll-category btn btn-outline">Sejarah Bangsa</div>
           </div>
         </div>
 
         <div class="poll-single-body row">
-          <div class="col-md-3 col-sm-12 poll-body-left">
+          <div class="col-md-4 col-sm-12 poll-body-left">
             <div class="poll-image">
               <img class="img-fluid" src="img/placeimg_640_480_tech1.jpg" />
             </div>
           </div>
-          <div class="col col-sm-9 col-md-6 col-lg-7 poll-body-center">
+          <div class="col col-sm-9 col-md-5 col-lg-6 poll-body-center">
             <div class="row no-gutters">
-
-                <div class="poll-question">
-                  <div class="poll-body-right-mobile row mb-3 d-flex d-sm-none">
-                    <div class="col">
-                      <a href="#" class="poin-mobile btn btn-outline btn-lg">70 poin</a>
-                    </div>
-                    <div class="col text-right">
-                      <a href="#" class="lapor-mobile btn btn-sm"><i class="fas fa-exclamation-circle"></i> Laporkan</a>
-                    </div>
+              <!-- POLL QUESTION -->
+              <div class="poll-question">
+                <div class="poll-body-right-mobile row mb-3 d-flex d-sm-none">
+                  <div class="col">
+                    <a href="#" class="poin-mobile btn btn-outline btn-lg">70 poin</a>
                   </div>
-                  <h2>Siapakah nama presiden Republik Indonesia yang pertama?</h2>
-                  <form role="form">
-                    <div class="radio radio-danger">
-                        <input type="radio" name="radio1" id="radio1" value="option1">
-                        <label for="radio1">Jokowi</label>
-                    </div>
-                    <div class="radio radio-danger">
-                        <input type="radio" name="radio1" id="radio2" value="option2">
-                        <label for="radio2">Soeharto</label>
-                    </div>
-                    <div class="radio radio-danger">
-                        <input type="radio" name="radio1" id="radio3" value="option3">
-                        <label for="radio3">Soekarno</label>
-                    </div>
-                    <div class="radio radio-danger">
-                        <input type="radio" name="radio1" id="radio4" value="option4">
-                        <label for="radio4">Tidak tahu</label>
-                    </div>
-                  </form>
+                  <div class="col text-right">
+                    <a href="#" class="lapor-mobile btn btn-sm"><i class="fas fa-exclamation-circle"></i> Laporkan</a>
+                  </div>
                 </div>
+                <h2>Siapakah nama presiden Republik Indonesia yang pertama?</h2>
+                <form role="form">
+                  <div class="radio radio-danger">
+                      <input type="radio" name="radio1" id="radio1" value="option1">
+                      <label for="radio1">Jokowi</label>
+                  </div>
+                  <div class="radio radio-danger">
+                      <input type="radio" name="radio1" id="radio2" value="option2">
+                      <label for="radio2">Soeharto</label>
+                  </div>
+                  <div class="radio radio-danger">
+                      <input type="radio" name="radio1" id="radio3" value="option3">
+                      <label for="radio3">Soekarno</label>
+                  </div>
+                  <div class="radio radio-danger">
+                      <input type="radio" name="radio1" id="radio4" value="option4">
+                      <label for="radio4">Tidak tahu</label>
+                  </div>
+                </form>
               </div>
-              
-
+              <!-- /END POLL QUESTION -->
+              <!-- POLL CAPTCHA -->
+              <div class="poll-captcha row no-gutters">
+                <div class="col col-sm-12 col-md-8">
+                  <label><a href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-search"></i> Cari Kode Sandi</a></label>
+                  <input type="text" placeholder="Masukan kode sandi.." />
+                </div>
+                <div class="col col-sm-12 col-md-4"><button href="#" class="btn btn-danger">Kirim</button></div>
+              </div>
+              <!-- /END POLL CAPTCHA -->
+            </div>
           </div>
           <div class="col-3 col-lg-2 poll-body-right d-none d-sm-flex">
             <div class="poll-value-point"><span class="value">70</span> <small>poin</small></div>
             <a href="#" class="lapor"><i class="fas fa-exclamation-circle"></i> Laporkan</a>
           </div>
+          
         </div>
       </div>
     </div>
   </div>
-	<!-- /END SITE CONTENT -->
+  <!-- /END SITE CONTENT -->
+  
+
+  
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Cari dan temukan kode sandi</h4>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img class="img-fluid" src="img/placeimg_640_480_tech1.jpg" />
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container-fluid">
