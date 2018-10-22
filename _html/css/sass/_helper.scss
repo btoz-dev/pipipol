@@ -2,6 +2,49 @@
    Helper classes
    ========================================================================== */
 
+   .btn-danger{
+       background-color: #ec2828;
+       border-color: #ec2828;
+   }
+
+   .modal-content{
+       border-radius: 1rem;
+   }
+   .modal-header,
+   .modal-body,
+   .modal-footer{
+       padding: 1rem 2rem;
+   }
+   .modal-footer{
+       justify-content: center;
+       .btn{
+           padding-left: 2rem;
+           padding-right: 2rem;
+       }
+   }
+
+   .progress{
+       border-radius: 0;
+       background-color: transparent;
+       height: 24px;
+       margin-top: -3px;
+   }
+   .progress-bar{
+        position: relative;
+        height: 13px;
+        margin-top: 10px;
+        border-radius: 10px;
+        &:after{
+            content: "\f164";
+            font-family: "FontAwesome";
+            position: absolute;
+            top: -15px;
+            right: -26px;
+            color: #cc3333;
+            font-size: 1.5rem;
+       }
+   }
+
 /*
  * Hide visually and from screen readers
  */

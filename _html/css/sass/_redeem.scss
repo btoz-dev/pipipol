@@ -1,0 +1,16 @@
+.redeem{
+    color: #fff;
+    &-header{
+        text-align: center;
+        padding: 1rem 0 3rem 0;
+        border-bottom: solid 1px #e1e1e1;
+        .user-avatar{
+            margin: 0 auto 1rem;
+            width: 128px;
+            height: 128px;
+            border-radius: 64px;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

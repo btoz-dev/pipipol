@@ -479,7 +479,7 @@ a:hover {
   padding: 0;
 }
 
-.site-content .poll-container {
+.site-content .bg-container {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
 }
@@ -838,11 +838,30 @@ a:hover {
 .poll-single-body .lapor {
   display: block;
   position: absolute;
-  bottom: 75px;
+  bottom: 88px;
   left: 0;
   text-align: center;
   width: 100%;
   padding: 1rem;
+}
+
+.redeem {
+  color: #fff;
+}
+
+.redeem-header {
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+.redeem-header .user-avatar {
+  margin: 0 auto 1rem;
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {
@@ -888,6 +907,56 @@ a:hover {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+.btn-danger {
+  background-color: #ec2828;
+  border-color: #ec2828;
+}
+
+.modal-content {
+  border-radius: 1rem;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 1rem 2rem;
+}
+
+.modal-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-footer .btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.progress {
+  border-radius: 0;
+  background-color: transparent;
+  height: 24px;
+  margin-top: -3px;
+}
+
+.progress-bar {
+  position: relative;
+  height: 13px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.progress-bar:after {
+  content: "\f164";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: -15px;
+  right: -26px;
+  color: #cc3333;
+  font-size: 1.5rem;
+}
+
 /*
  * Hide visually and from screen readers
  */
