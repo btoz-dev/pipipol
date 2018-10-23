@@ -37,6 +37,7 @@
         margin-top: 3rem;
         .card{
             border: none;
+            margin-bottom: 1.3rem;
             &-poin{
                 position: absolute;
                 top: 1rem;
@@ -116,5 +117,13 @@
                 margin: 2rem auto;
             }
         }
+    }
+}
+
+
+#modalRedeemSuccess{
+    .fas{
+        font-size: 7rem;
+        color: #ec2828;
     }
 }

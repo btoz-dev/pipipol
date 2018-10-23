@@ -238,7 +238,7 @@
                             </div>
                         </div>
                         <div class="card-columns-footer">
-                            <button class="btn btn-danger">Redeem</button>
+                            <a class="btn btn-danger" data-toggle="modal" data-target="#modalRedeemSuccess">Redeem</a>
                         </div>
                     </form>
                 </div>
@@ -262,84 +262,20 @@
   </footer>
 
 
-  <!-- MODAL IMAGE CAPTCHA -->
-  <div class="modal fade" id="modalPollImageCaptcha">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Cari dan temukan kode sandi</h4>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <img class="img-fluid" src="img/placeimg_640_480_tech1.jpg" />
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  <!-- /END MODAL IMAGE CAPTCHA -->
-
-
   <!-- MODAL POLL RESULTS -->
-  <div class="modal fade" id="modalPollResults">
+  <div class="modal fade" id="modalRedeemSuccess">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Terimakasih, data berhasil terkirim</h4>
-          </div>
+        <div class="modal-content text-center">
+
+            <!-- Modal Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100">Terimakasih, redeem berhasil!</h4>
+            </div>
           
           <!-- Modal body -->
           <div class="modal-body">
-            <p>Poinmu bertambah: <strong>+30</strong></p>
-            <p>Pilihanmu: <strong>XXX</strong></p>
-            <br>
-            <h5>Hasil Saat Ini</h5>
-            <div class="row">
-              <div class="col-4">Jokowi:</div> 
-              <div class="col-6">
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-danger" style="width:30%;"></div>
-                </div>
-              </div> 
-              <div class="col-2 text-right"><strong>33%</strong></div>
-            </div>
-            <div class="row">
-              <div class="col-4">Soeharto:</div> 
-              <div class="col-6">
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-danger" style="width:67%;"></div>
-                </div>
-              </div> 
-              <div class="col-2 text-right"><strong>33%</strong></div>
-            </div>
-            <div class="row">
-              <div class="col-4">Soekarno:</div> 
-              <div class="col-6">
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-danger" style="width:21%;"></div>
-                </div>
-              </div> 
-              <div class="col-2 text-right"><strong>33%</strong></div>
-            </div>
-            <div class="row">
-              <div class="col-4">Tidak tahu:</div> 
-              <div class="col-6">
-                  <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-danger" style="width:70%;"></div>
-                </div>
-              </div> 
-              <div class="col-2 text-right"><strong>33%</strong></div>
-            </div>
+                <i class="fas fa-box-open mt-2 mb-2"></i>
+                <p>Anda telah berhasil menukarkan poin Anda dengan hadiah XXXXXXXX sebesar 70 poin.</p>
           </div>
           
           <!-- Modal footer -->

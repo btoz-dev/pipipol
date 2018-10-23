@@ -889,6 +889,7 @@ a:hover {
 
 .redeem-prizes .card {
   border: none;
+  margin-bottom: 1.3rem;
 }
 
 .redeem-prizes .card-poin {
@@ -973,6 +974,11 @@ a:hover {
   display: block;
   width: 300px;
   margin: 2rem auto;
+}
+
+#modalRedeemSuccess .fas {
+  font-size: 7rem;
+  color: #ec2828;
 }
 
 .footer {
