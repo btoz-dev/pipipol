@@ -12,5 +12,109 @@
             background-position: center;
             background-size: cover;
         }
+        .user-name{
+            h4{
+                margin: 0;
+                font-weight: 700;
+            }
+        }
+        .user-poin{
+            &-total{
+                font-size: 3rem;
+                line-height: 1;
+                font-weight: 700;
+            }
+        }
+        .user-email{
+            margin-bottom: 1rem;
+        }
+        .user-badge{
+            font-size: 4rem;
+        }
+    }
+
+    &-prizes{
+        margin-top: 3rem;
+        .card{
+            border: none;
+            &-poin{
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                width: 75px;
+                height: 75px;
+                border-radius: 38px;
+                background-color: #f26522;
+                text-align: center;
+                font-size: 2rem;
+                line-height: 2;
+                margin: auto;
+                font-style: italic;
+                font-weight: 700;
+                span{
+                    position: relative;
+                    top: -18px;
+                    line-height: 1;
+                    font-size: 0.75rem;
+                    font-style: normal;
+                    display: block;
+                }
+            }
+            &-checkbox{
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                width: 50px;
+                height: 50px;
+                .checkbox {
+                    padding: 0;
+                    label{
+                        padding: 0;
+                        &::before{
+                            width: 50px;
+                            height: 50px;
+                            left: 0;
+                            top: -10px;
+                            margin-left: -20px;
+                            border: solid 3px #fff;
+                            border-radius: 25px;
+                            background-color: #000;
+                        }
+                        &::after {
+                            width: 50px;
+                            height: 50px;
+                            left: -13px;
+                            top: -12px;
+                            margin-left: 0;
+                            padding-left: 0;
+                            padding-top: 0px;
+                            font-size: 36px;
+                            color: #fff;
+                        }
+                    }
+                    &.checkbox-danger {
+                        input[type="checkbox"]:checked + label::before{
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+            &-body{
+                text-align: center;
+                color: #000;
+                h5{
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .card-columns-footer{
+            .btn{
+                display: block;
+                width: 300px;
+                margin: 2rem auto;
+            }
+        }
     }
 }
