@@ -43,16 +43,6 @@
 
 .poll-grids{
     overflow: hidden;
-    .btn.loadmore{
-        margin: 3rem auto;
-        color: #fff;
-        display: block;
-        width: 240px;
-        &:hover{
-            color: #fff;
-            background-color: #191919 !important;
-        }
-    }
 }
 .poll-card{
     position: relative;
